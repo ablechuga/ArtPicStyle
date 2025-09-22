@@ -1,14 +1,34 @@
 # ArtPicStyle
+A web app that lets users select an artist, view their artworks, upload an image, and apply the style of that artist using neural style transfer.
+
+#ForTheLoveOfCode
+
+## What does it do?
 
 Turn your photo into works of art using the style of famous painters.
-
-##  What does it do?
 
 1. Select an artist from the autocomplete search box.
 2. Automatically loads 5 artworks from the selected artist.
 3. Upload your own image (e.g., a selfie or photo).
 4. Applies the style of the selected painting to your uploaded image.
 5. Allows you to download the final stylized artwork.
+
+---
+
+## Built With
+
+This project was created with love for art and technology for the GitHub hackathon 2025 #ForTheLoveOfCode
+
+**Technologies & Tools Used:**
+
+- #FastAPI – Backend API
+- #Uvicorn – ASGI server
+- #Pillow – Image handling
+- #HTML, #CSS, #JavaScript – Frontend
+- #Fetch_API – API communication
+- #neural-style-pt – Style transfer model
+- #subprocess – Run style transfer
+- #GitHub_Copilot – AI-powered coding assistant
 
 
 ## Project Structure
@@ -64,6 +84,10 @@ Users can customize the following style transfer settings by modifying the `subp
 
 These values can be tweaked in the backend to change the result's style intensity, smoothness, or resolution.
 
+## License
+
+This project is licensed under the [MIT License](LICENSE).  
+© 2025 Ana Beatriz Lechuga De Jesus
 
 ## Installation
 
@@ -85,9 +109,3 @@ git submodule add https://github.com/ProGamerGov/neural-style-pt.git
 cd neural-style-pt
 python models\download_models.py
 python neural-style-pt/neural_style.py --help
--------
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).  
-© 2025 Ana Beatriz Lechuga De Jesus
