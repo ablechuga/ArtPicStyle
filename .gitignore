@@ -1,0 +1,23 @@
+# Virtual environment: don't commit the full folder with dependencies
+venv/
+
+# Python compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Editor or IDE settings (user-specific)
+.vscode/
+.idea/
+
+# Log files
+*.log
+
+# Temporary or system files
+*.swp
+.DS_Store
+Thumbs.db
+
+# Local database files (e.g., SQLite)
+*.sqlite3

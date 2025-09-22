@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ArtPicStyle</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+  <h1>ArtPicStyle</h1>
+
+  <div class="autocomplete-wrapper">
+    <div class="autocomplete-with-button">
+      <div class="input-with-suggestions">
+        <span id="clear-input" style="display:none;">×</span>
+        <input id="artist-input" type="text" placeholder="Start typing artist name..." autocomplete="off" />
+        <ul id="suggestions"></ul>
+      </div>
+
+      <button id="load-artworks">Load Artworks</button>
+    </div>
+  </div>
+
+  <hr>
+
+  <div id="artworks-container" style="display: none;">
+    <div id="artworks-list" style="display: flex; flex-wrap: wrap; gap: 20px;"></div>
+  </div>
+
+  <hr>
+
+  <div id="upload-section" style="display: none;">
+    <input type="file" id="file" accept="image/*">
+    <button id="apply-style">Apply ArtStyle</button>
+  </div>
+
+  <hr>
+
+  <div id="result-section" style="display:none;">
+    <img id="styled-image" src="" alt="Styled Result">
+    <a id="download-btn" class="download-button" href="#" download="stylized_image.jpg">
+      Download your artwork
+    </a>
+  </div>
+
+  <div id="art-loader" class="art-loader">
+    <div class="loader-circle">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </div>
+
+  <script src="/static/js/app.js"></script>
+</body>
+
+</html>
